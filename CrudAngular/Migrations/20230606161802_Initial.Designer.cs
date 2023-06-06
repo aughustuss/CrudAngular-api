@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CrudAngular.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230605150352_Initial")]
+    [Migration("20230606161802_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

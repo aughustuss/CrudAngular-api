@@ -15,7 +15,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 builder.Services.AddCors(options => options.AddPolicy(name: "HeroOrigins", policy =>
 {
-    policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader();
+    policy.WithOrigins("https://angular-ui-aughustuss.vercel.app/").AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader();
 }));
 
 var app = builder.Build();

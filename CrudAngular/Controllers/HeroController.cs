@@ -52,9 +52,9 @@ namespace CrudAngular.Controllers
 
         [HttpDelete("{id}")]
         
-        public async Task<ActionResult<List<Hero>>> DeleteHero(Hero hero) 
+        public async Task<ActionResult<List<Hero>>> DeleteHero(int id) 
         {
-            var dbHero = await _context.Heroes.FindAsync(hero.Id);
+            var dbHero = await _context.Heroes.FindAsync(id);
             if(dbHero == null)
             {
                 return BadRequest("Não existe herói com este ID... ");
